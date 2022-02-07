@@ -88,6 +88,9 @@ module.exports = {
 
                 projects.hasUpdate(task, timestamp).then((version) => {
                     task.version = version
+                    task.versionStr = task.options.target.version
+                        .replace('{version}', version)
+                        .replace('{git_commit}', task.commit.hash)
                     task.status = '清理工作区'
                     projects.clearWorkspace(task).then(resolve, reject)
                 }, reject)
@@ -141,6 +144,7 @@ module.exports = {
             logger.log('> 上传构建文件')
 
             Promise.all([
+                projects.checkVersion(task),
                 projects.addBuild(task),
                 projects.addBadge(task),
                 maven.relocateTarget(task)

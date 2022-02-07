@@ -102,6 +102,7 @@ module.exports = {
                 timestamp: task.commit.timestamp,
                 message: task.commit.message,
                 author: task.commit.author,
+                version: task.versionStr,
                 target: task.finalName + '.jar'
             }
 
