@@ -1213,5 +1213,47 @@
                 "1": "1.14+"
             }
         }
+    },
+    "SlimefunGuguProject/MiniBlocks:master": {
+        "type": "maven",
+        "options": {
+            "target": {
+                "name": "MiniBlocks",
+                "version": "Build {version} zh-CN(SlimefunGuguProject) (git {git_commit})"
+            }
+        },
+        "dependencies": {
+            "Minecraft": {
+                "1": "1.17+"
+            }
+        }
+    },
+    "SlimefunGuguProject/SlimyBees:master": {
+        "type": "maven",
+        "options": {
+            "target": {
+                "name": "SlimyBees",
+                "version": "Build {version} zh-CN(SlimefunGuguProject) (git {git_commit})"
+            }
+        },
+        "dependencies": {
+            "Minecraft": {
+                "1": "1.18+"
+            }
+        }
+    },
+    "SlimefunGuguProject/NotEnoughAddons:master": {
+        "type": "maven",
+        "options": {
+            "target": {
+                "name": "NotEnoughAddons",
+                "version": "Build {version} zh-CN(SlimefunGuguProject) (git {git_commit})"
+            }
+        },
+        "dependencies": {
+            "Minecraft": {
+                "1": "1.17+"
+            }
+        }
     }
 }
